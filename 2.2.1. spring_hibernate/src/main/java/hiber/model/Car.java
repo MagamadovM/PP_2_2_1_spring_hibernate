@@ -16,7 +16,6 @@ public class Car {
     @Column(name = "series")
     private int series;
 
-    // Связь с таблицей users через поле user
     @OneToOne(mappedBy = "car")
     private User user;
 
@@ -27,7 +26,6 @@ public class Car {
         this.series = series;
     }
 
-    // геттеры и сеттеры
 
     public Long getId() {
         return id;

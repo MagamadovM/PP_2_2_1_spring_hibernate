@@ -48,7 +48,6 @@ public class AppConfig {
 
       factoryBean.setHibernateProperties(props);
 
-      // Передаем оба класса одновременно
       factoryBean.setAnnotatedClasses(User.class, Car.class);
       return factoryBean;
    }

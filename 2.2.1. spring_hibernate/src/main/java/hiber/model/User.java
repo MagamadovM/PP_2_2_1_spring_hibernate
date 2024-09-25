@@ -19,7 +19,6 @@ public class User {
     @Column(name = "email")
     private String email;
 
-    // Указываем связь с таблицей cars
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "car_id")
     private Car car;
